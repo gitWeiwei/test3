@@ -1,0 +1,128 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Highcharts Example</title>
+    <link rel="stylesheet" type="text/css" href="css/column_diagram.css" />
+    <link rel="stylesheet" type="text/css" href="css/info_report.css" />
+    <style>
+        g.highcharts-grid:nth-child(6) > path {
+            stroke-width: 0;
+        }
+
+        .highcharts-legend {
+            margin-top: -30px;
+        }
+    </style>
+    <script src="js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'column',    //指定图表的类型，默认是折线图（line）
+        },
+        credits: {
+            enabled: false   //右下角不显示LOGO
+        },
+        title: {
+            text: '',
+        },
+        subtitle: {
+            text: '',
+        },
+        exporting: {//Highcharts 图表导出功能模块。
+            enabled: false
+        },
+        plotOptions: {
+            column: {
+                stacking: 'percent',
+				pointWidth:35
+            },
+         series:{
+                allowPointSelect:false,
+                animation:false,
+                events:{
+					legendItemClick:function(event){
+                    return false; //return  true 则表示允许切换
+                         }
+                     }
+            }
+        },
+        xAxis: {
+            title: {
+                text: '保存时间',
+                align: 'high',
+                rotation: 0,
+            },
+            categories: ['LT04', 'LT05', 'LT06'],
+            labels: {
+                align: 'center',
+            },
+            lineColor: '#000000',
+            lineWidth: '2',
+            tickColor: '#000000',
+            tickWidth: 1,
+            type: 'linear',
+            tickmarkPlacement: 'on',
+
+
+        },
+        yAxis: {
+            title: {
+                align: 'high',
+                offset: 0,
+                text: '数量',
+                rotation: 0,
+                y: -25
+            },
+            plotLines: [{//通过颜色线横贯在绘图区域上标记轴中的一个特定值
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }],
+            lineColor: 'black',
+            lineWidth: '2'
+        },
+        legend: { //图例说明是包含图表中数列标志和名称的容器
+            align: 'center',
+            verticalAlign: 'top',
+            x: 20,
+            y: 10,
+            symbolHeight: 14,//高度
+            symbolWidth:14
+        },
+        //禁用点击图例隐藏
+        series: [{
+            name: '高危',
+            data: [5, 3, 4],
+            color: '#E2214E',
+        }, {
+            name: '危险',
+            data: [2, 7, 3],
+            color: '#F7B52B'
+        }, {
+            name: '只读',
+            data: [3, 4, 4],
+            color: '#0749C3'
+        },{
+            name: '健康',
+            data: [3, 4, 4],
+            color: '#66FE17'
+        }
+    ]});
+});
+    </script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/exporting.js"></script>
+</head>
+<body style="position:relative;">
+    <div id="container" style="width:90%; height:250px; margin: 0 auto">
+    </div>
+    <div class="axis">
+        <i></i>
+    </div>
+    <div class="axisy">
+        <i class="y"></i>
+    </div>
+</body>
+</html>

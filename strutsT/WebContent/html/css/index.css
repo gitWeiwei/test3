@@ -1,0 +1,755 @@
+﻿body {
+    background-color: #EEF3FA;
+    background-image: Url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    width: 100%; /*1440px*/
+    height: 100%; /* 644px*/
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    width: 100%;
+    background: -ms-linear-gradient(top,#ECECEC,#D8D7D7); /* IE 10 */
+    background: -moz-linear-gradient(top,#D8D7D7,#ECECEC); /*火狐*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#D8D7D7), to(#ECECEC)); /*谷歌*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D8D7D7), to(#ECECEC)); /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #D8D7D7, #ECECEC); /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #D8D7D7, #ECECEC); /*Opera 11.10+*/
+    box-shadow: 0px 10px 20px #D2DEFF;
+}
+
+    #header .logo {
+        margin-left: 6.25%;
+        width: 18.75%;
+        margin-top: 0.9%;
+        position: absolute;
+    }
+
+.rt {
+    float: left;
+}
+
+
+#header ul {
+    width: 55%; /*792*/
+    margin-left: 25%;
+}
+
+    #header ul li {
+        float: left;
+        list-style: none;
+        margin-top: 2%;
+        width: 14.55%;
+        text-align: center;
+    }
+
+#header > ul > li a {
+    font-family: "黑体";
+    font-size: 0.875em;
+    color: #282828;
+    text-decoration: none;
+}
+
+.rt li .head-icon {
+    vertical-align: middle;
+}
+
+.rt li a {
+    vertical-align: middle;
+    margin-top: 1%;
+}
+/*首页*/
+.rt li:first-child {
+    width: 10% !important;
+}
+
+.rt li:nth-child(2) {
+    width: 13% !important;
+}
+
+li.index a {
+}
+/*检测*/
+li.check a {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+/*向导*/
+li.guide {
+    margin-top: 1.5% !important;
+    text-align: center;
+}
+
+.guide .switchbox {
+    width: 90%; /*107*/
+    border: 2px solid #9DC2DA;
+    text-align: left;
+}
+
+    .guide .switchbox img {
+    }
+/*开关------------*/
+.switch {
+    width: 7.4%;
+    height: 44px;
+    border: 1px solid #CED5FF;
+    z-index: 20;
+    position: absolute;
+    margin-top: -1%;
+    margin-left: 37.6%;
+    display: none;
+}
+
+    .switch div {
+        width: 100%;
+        height: 22px;
+        color: #000;
+        font-family: "黑体";
+        font-size: 0.875em;
+        text-align: center;
+        line-height: 22px;
+    }
+
+    .switch .bj {
+        background-color: #1E9EDD;
+    }
+/*修改密码*/
+#header .lock {
+    width: 5.55%;
+    height: 20px;
+    float: left;
+    margin-top: 1.2%;
+}
+
+.lock a {
+    color: #000;
+    font-family: "黑体";
+    font-size: 0.875em;
+    text-decoration: none;
+    float: left;
+}
+
+.lock img {
+    float: left;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+/*报表*/
+li.rep a {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+/*维护*/
+li.pro a {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+/*打印*/
+li.print a {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+#header ul li .sel, #header ul li .sel2 {
+    position: absolute;
+    margin-top: 0.5%;
+}
+
+/*图标*/
+#header .us #user, #header .set #user2 {
+}
+
+#header .us #sel-d, #header .set #sel-d2 {
+    width: 8.69%;
+}
+
+#header .us a {
+    text-decoration: none;
+    margin-top: 3.88%;
+    width: 21.92%;
+    color: #68AAD5;
+    font-family: "黑体";
+    font-size: 0.875em;
+    vertical-align: middle;
+}
+
+#header .us .user {
+    width: 50%;
+}
+
+div.user > a {
+    background: url(img/user.png) no-repeat left center;
+    padding-left: 29%;
+}
+/*主体*/
+#main {
+    width: 100%;
+    padding: 0;
+    margin-top: 0px;
+    position:absolute;
+}
+/*左侧*/
+#aside {
+    width: 3.47%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-color: #C8DCFA;
+}
+
+/*右侧*/
+#content {
+    width: 96.52%;
+    margin-left: 3.47%;
+    z-index: 10;
+}
+
+#nav-btn {
+    width: 9.78%;
+    border: 1px solid #ccc;
+    border-top: 2px solid #B0193F;
+    text-align: center;
+    float: left;
+}
+
+    #nav-btn a {
+        text-decoration: none;
+        color: #000;
+        font-family: "黑体";
+        font-size: 1em;
+        vertical-align: middle;
+    }
+
+
+/*表格*/
+.table {
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+#table-header {
+    width: 100%;
+}
+
+#scroll {
+    overflow: auto;
+}
+
+.table tr {
+    border: 1px solid #81A2BE;
+    opacity: 65;
+    padding: 0px;
+    margin-bottom: 0;
+}
+    /*表格表头*/
+    .table tr th {
+        width: 16.66%;
+        background-color: #1E8FD5;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        border-top: 2px solid #65A6D0;
+    }
+
+    .table tr td {
+        text-align: center;
+        color: #5D5D5D;
+    }
+
+.odd .odd-td {
+    width: 16.66%;
+}
+
+.odd {
+    background-color: #fff;
+    color: #5D5D5D;
+    text-align: center;
+}
+
+.even {
+    background-color: #D1E4F3;
+    color: #5D5D5D;
+    text-align: center;
+}
+
+/*能滑动的顶部*/
+#indexList {
+    width: 100%;
+    float: left;
+    z-index: 10;
+}
+
+    #indexList img {
+        margin-left: 2.23%;
+        margin-top: 0.6%;
+        position: absolute;
+        z-index: 50;
+    }
+
+#iframe {
+    width: 100%;
+    border: 0px;
+    position: relative;
+    z-index: 10;
+}
+
+#indexList-3 {
+    width: 87%;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    margin-left: 9.5%;
+    z-index: 60;
+}
+
+#iframe2 {
+    width: 100%;
+    border: 0px;
+}
+/*遮罩层*/
+#zhezhao {
+    width: 100%;
+    background-color: #ccc;
+    opacity: 0.5;
+    z-index: 60;
+    position: absolute;
+    display: none;
+}
+/*左侧的红色按钮*/
+#lf-btn {
+    width: 3.47%;
+    position: absolute;
+    padding-left: 1.1%;
+    margin-top: 40%;
+}
+
+    #lf-btn img {
+        padding-top: 0px;
+        position: absolute;
+        padding-top: 10%;
+    }
+/*左侧的弹出框*/
+#lf-box {
+    width: 8.05%;
+    border: 1px solid #ED9096;
+    position: absolute;
+    margin-left: 3.47%;
+    z-index: 130;
+    background-color: #fff;
+    margin-top: 25.25%;
+}
+
+    #lf-box li {
+        list-style: none;
+        text-align: left;
+        padding-left: 8.03%;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+    }
+
+        #lf-box li:hover {
+            background-color: #8DBBFF;
+        }
+
+        #lf-box li a {
+            text-decoration: none;
+            font-size: 0.75em;
+            font-family: "黑体";
+            color: #038AB8;
+        }
+/*遮罩层--*/
+/*检测向导的弹出框-----*/
+.detection-box {
+    border-radius: 5px;
+    width: 92.77%; /*1336*/
+    z-index: 140;
+    position: absolute;
+    margin-left: 4%;
+    margin-top: 6%;
+    display: none;
+    /*阴影*/
+    -webkit-box-shadow: 0 8px 8px #8B8B88;
+    -moz-box-shadow: 0 8px 8px #8B8B88;
+    box-shadow: 0 8px 8px #8B8B88;
+}
+/*头部*/
+.dete-head {
+    width: 100%;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: -ms-linear-gradient(top, #2196D9, #1B85CF); /* IE 10 */
+    background: -moz-linear-gradient(top,#2196D9,#1B85CF); /*火狐*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#2196D9), to(#1B85CF)); /*谷歌*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2196D9), to(#1B85CF)); /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #2196D9, #1B85CF); /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #2196D9, #1B85CF); /*Opera 11.10+*/
+}
+
+    .dete-head span {
+        color: #fff;
+        font-family: "黑体";
+        font-size: 1.125em;
+        line-height: 40px;
+        margin-left: 1.5%;
+    }
+
+    .dete-head img {
+        float: right;
+        margin-top: 0.2%;
+    }
+/*内容*/
+.detection-box .detection-con {
+    width: 100%;
+    background-color: #EDF2FE;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.detection-con p {
+    color: #000;
+    font-size: 1em;
+    font-family: "黑体";
+    margin-top: 1.8%;
+    margin-left: 21px;
+    position: absolute;
+}
+
+.detection-con ul {
+    width: 95.05%;
+    margin-top: 4%;
+    position: absolute;
+    margin-left: 2.69%;
+}
+
+    .detection-con ul li {
+        list-style: none;
+        float: left;
+        width: 20%; /*254*/
+    }
+
+.detection-con .check {
+    width: 78.74%;
+    background-color: #FBFAF0;
+    border: 1px solid #6AB1DC;
+    position: relative;
+    margin: 0 auto;
+}
+
+    .detection-con .check > span {
+        width: 100%;
+        color: #000;
+        font-size: 1.125em;
+        font-family: "黑体";
+        background-color: #78CEF8;
+        position: absolute;
+        text-align: center;
+    }
+/*基本检测的说明*/
+.basecheck {
+    width: 78.74%;
+    border-radius: 5px;
+    border: 1px solid #3798D7;
+    border-bottom: 2px solid #3798D7;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+
+    .basecheck span {
+        color: #000;
+        font-size: 0.75em;
+        font-family: "黑体";
+        margin-top: 0.5%;
+        margin-left: 0.5%;
+        position: absolute;
+    }
+
+    .basecheck img {
+        margin-top: 2%;
+        float: left;
+        margin-left: 5%;
+    }
+/*标准检测*/
+.normcheck {
+    width: 78.74%;
+    border-radius: 5px;
+    border: 1px solid #3798D7;
+    border-bottom: 2px solid #3798D7;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+
+    .normcheck img {
+        margin-top: 2%;
+        float: left;
+        margin-left: 5%;
+    }
+
+    .normcheck p {
+        width: 13%;
+        color: #000;
+        font-size: 0.75em;
+        font-family: "黑体";
+        margin-top: 0.5%;
+        margin-left: 2.5%;
+        position: absolute;
+    }
+/*快速检测-同基本检测*/
+/*比例检测-同标准检测*/
+/*完全检测*/
+.wholecheck {
+    width: 78.74%;
+    border-radius: 5px;
+    border: 1px solid #3798D7;
+    border-bottom: 2px solid #3798D7;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+
+    .wholecheck img {
+        margin-top: 2%;
+        float: left;
+        margin-left: 5%;
+    }
+
+    .wholecheck p {
+        width: 13%;
+        color: #000;
+        font-size: 0.75em;
+        font-family: "黑体";
+        margin-top: 0.5%;
+        margin-left: 2.5%;
+        position: absolute;
+    }
+/*遮罩*/
+.shade {
+    width: 100%;
+    z-index: 25;
+    background-color: #000;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    position: absolute;
+    display: none;
+}
+/*下拉子菜单-----------检测----*/
+#service_items {
+    width: 99.8%;
+    position: absolute;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px #DDD;
+    z-index: 100;
+    background: -ms-linear-gradient(top, #e4edfa, #e9ebe8); /* IE 10 */
+    background: -moz-linear-gradient(top,#e4edfa,#e9ebe8); /*火狐*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#e4edfa), to(#e9ebe8)); /*谷歌*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e4edfa), to(#e9ebe8)); /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #e4edfa, #e9ebe8); /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #e4edfa, #e9ebe8); /*Opera 11.10+*/
+}
+
+    #service_items li {
+        padding-right: 1%;
+        padding-left: 1%;
+        margin: 0px;
+        float: left;
+        list-style: none;
+        text-align: center;
+        padding-top: 0.5%;
+    }
+
+        #service_items li:hover {
+            background: url(../img/sel_bg.png) no-repeat center;
+        }
+
+    #service_items .li1 {
+        margin-left: 14.58%;
+    }
+
+    #service_items li img {
+        display: inline-block;
+        padding-left: 2%;
+        margin-top: 12%;
+    }
+
+    #service_items li a {
+        text-decoration: none;
+        display: block;
+    }
+
+        #service_items li a span {
+            color: #6E6E6E;
+            font-size: 0.875em;
+            font-family: "黑体";
+            text-align: center;
+            display: inline-block;
+        }
+/*下拉子菜单-----------打印----*/
+#service_items2 {
+    width: 99.8%;
+    position: absolute;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px #DDD;
+    z-index: 100;
+    background: -ms-linear-gradient(top, #e4edfa, #e9ebe8); /* IE 10 */
+    background: -moz-linear-gradient(top,#e4edfa,#e9ebe8); /*火狐*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#e4edfa), to(#e9ebe8)); /*谷歌*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e4edfa), to(#e9ebe8)); /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #e4edfa, #e9ebe8); /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #e4edfa, #e9ebe8); /*Opera 11.10+*/
+}
+
+    #service_items2 li {
+        float: left;
+        list-style: none;
+        text-align: center;
+        padding-top: 0.5%;
+    }
+
+        #service_items2 li :hover {
+            background: url(../img/sel_bg.png) no-repeat center;
+        }
+
+        #service_items2 li img {
+            display: inline-block;
+            padding-left: 2%;
+            margin-top: 5%;
+        }
+
+        #service_items2 li a {
+            text-decoration: none;
+            display: block;
+        }
+
+            #service_items2 li a span {
+                color: #6E6E6E;
+                font-size: 0.875em;
+                font-family: "黑体";
+                text-align: center;
+                display: inline-block;
+            }
+
+    #service_items2 .li2 {
+        margin-left: 5%;
+    }
+/*统计报表的弹出-------------*/
+#report_forms {
+    width: 99.8%;
+    position: absolute;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px #DDD;
+    z-index: 100;
+    background: -ms-linear-gradient(top, #e4edfa, #e9ebe8); /* IE 10 */
+    background: -moz-linear-gradient(top,#e4edfa,#e9ebe8); /*火狐*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#e4edfa), to(#e9ebe8)); /*谷歌*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e4edfa), to(#e9ebe8)); /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #e4edfa, #e9ebe8); /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #e4edfa, #e9ebe8); /*Opera 11.10+*/
+}
+
+    #report_forms li {
+        margin: 0px;
+        float: left;
+        list-style: none;
+        text-align: center;
+        padding-top: 0.5%;
+    }
+
+        #report_forms li :hover {
+            background: url(../img/sel_bg.png) no-repeat center;
+        }
+
+        #report_forms li img {
+            display: inline-block;
+            padding-left: 2%;
+            margin-top: 12%;
+        }
+
+        #report_forms li a {
+            text-decoration: none;
+            display: block;
+        }
+
+            #report_forms li a span {
+                color: #6E6E6E;
+                font-size: 0.875em;
+                font-family: "黑体";
+                text-align: center;
+                display: inline-block;
+            }
+
+    #report_forms .li2 {
+        margin-left: 23%;
+    }
+
+/*系统维护的弹出-------------*/
+#system {
+    width: 99.8%;
+    position: absolute;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px #DDD;
+    z-index: 120;
+    background: -ms-linear-gradient(top, #e4edfa, #e9ebe8); /* IE 10 */
+    background: -moz-linear-gradient(top,#e4edfa,#e9ebe8); /*火狐*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#e4edfa), to(#e9ebe8)); /*谷歌*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e4edfa), to(#e9ebe8)); /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #e4edfa, #e9ebe8); /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #e4edfa, #e9ebe8); /*Opera 11.10+*/
+}
+
+    #system li {
+        padding-right: 1%;
+        padding-left: 1%;
+        margin: 0px;
+        float: left;
+        list-style: none;
+        text-align: center;
+        padding-top: 0.5%;
+    }
+
+        #system li :hover {
+            background: url(../img/sel_bg.png) no-repeat center;
+        }
+
+        #system li img {
+            display: inline-block;
+            padding-left: 2%;
+            margin-top: 12%;
+        }
+
+        #system li a {
+            text-decoration: none;
+            display: block;
+        }
+
+            #system li a span {
+                color: #6E6E6E;
+                font-size: 0.875em;
+                font-family: "黑体";
+                text-align: center;
+                display: inline-block;
+            }
+
+    #system .li2 {
+        margin-left: 40%;
+    }
+/**/
+.sel_bg {
+    background: url(../img/sel_bg.png) no-repeat center;
+}
+
+
+
+/*------------------------*/

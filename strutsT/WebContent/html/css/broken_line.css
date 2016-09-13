@@ -1,0 +1,97 @@
+﻿ 
+.broken_line{
+    width:90% !important;
+     height:220px !important;
+    background-color:#EEF3FA !important;
+}
+.highcharts-background{
+     background-color:#EEF3FA !important;
+     fill:transparent;
+}
+
+.highcharts-legend > rect:nth-child(1){
+     fill:transparent;
+}
+.highcharts-title{
+    fill:transparent;
+    color:transparent;
+}
+.highcharts-title > tspan:nth-child(1){
+    color:transparent;
+     fill:transparent;
+}
+    /*横线*/
+    path{
+        stroke-width:1;
+    }
+
+    /*x轴箭头*/
+.axis {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    margin-left: 88.5%;
+    margin-top: -19.5%;
+}
+    .axis i {
+        float: left;
+        border: 2px #272728 solid;
+        border-width: 2px 2px 0 0;
+        width: 6px;
+        height: 6px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        background-image: url("");
+        text-align: center;
+        margin-top: 38%;
+        margin-left: 30%;
+    }
+    /*y轴箭头*/
+    .axisy {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -56%;
+}
+
+    .axisy .y {
+        float: left;
+        border: 2px #272728 solid;
+        border-width: 2px 2px 0 0;
+        width: 6px;
+        height: 6px;
+        top: 2px;
+        transform: rotate(320deg);
+        -webkit-transform: rotate(45deg);
+        margin-left:24%;
+        margin-top:55%;
+    }
+   .highcharts-xaxis-title{
+       float:right !important;
+       width:100% !important;
+   }
+ #highcharts-2 > svg:nth-child(1) > g:nth-child(5) > path{
+     stroke:none;
+ }
+g.highcharts-legend:nth-child(11) > g:nth-child(2) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1){
+    fill:#E2214E;
+    stroke-width:0;
+    stroke:#E2214E;
+    
+}
+ /*危险*/
+ g.highcharts-tracker:nth-child(3) > rect{
+     fill:#F7B52B;
+      stroke-width:0;
+ }
+ /*只读*/
+ g.highcharts-tracker:nth-child(5) > rect{
+      fill:#0749C3;
+       stroke-width:0;
+ }
+ /*健康*/
+ g.highcharts-tracker:nth-child(7) > rect{
+      fill:#66FE17;
+       stroke-width:0;
+ }

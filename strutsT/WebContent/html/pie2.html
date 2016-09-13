@@ -1,0 +1,85 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Highcharts Example</title>
+
+    <style>
+        g.highcharts-grid:nth-child(6) > path {
+            stroke-width: 0;
+        }
+    </style>
+    <script src="js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript">
+            $(function () {
+                $('#container_2').highcharts({
+                chart: {
+                    type: 'pie',
+					backgroundColor:"#EEF3FA",
+                    x:-20,
+                    height: 230,
+                    marginLeft: -150
+                },
+                credits: {
+                    enabled: false   //右下角不显示LOGO
+                },
+                title: {
+                    text: '',
+                },
+                subtitle: {
+                    text: '',
+                },
+                exporting: {//Highcharts 图表导出功能模块。
+                    enabled: false
+                },
+                colors: ['#E2214E', '#F7B52B', '#0749C3', '#66FE17',
+                         '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'],
+                legend: {
+                    layout: 'vertical',
+                    floating: true,
+                    backgroundColor: '#EEF3FA',
+                    align: 'right',
+                    verticalAlign: 'top',
+                    y: 30,
+                    x: -20,
+                    itemMarginBottom :5,//图例的上下间距
+                    maxHeight: 200,
+                    symbolHeight: 14,//高度
+                    symbolWidth:14
+                },
+                    //禁用点击图例隐藏
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: false,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: false
+                        },
+                        showInLegend: true,
+                        symbolWidth: 24,
+                        point: {
+                            events: {
+                                legendItemClick: function (e) {
+                                    return false; // 直接 return false 即可禁用图例点击事件
+                                }
+                            }
+                        }
+                    }
+                },
+                series: [{
+                    data: [
+                        ['LTO4'+'(66盘)' +'<br><span style="text-align:center;">33%</span>', 10.0],
+                        ['LTO5'+'(67盘)'+'<br><span style="text-align:center;">33.5%</span>',     21.9],
+                        ['LTO6'+'(67盘)'+'<br><span style="text-align:center;">33.5%</span>',28.1],
+                    ]
+                }]
+            });
+        });
+    </script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/info_alert.js"></script>
+</head>
+<body>
+    <div id="container_2" style="width:100%; margin: 0 auto;background-color:#EEF3FA"></div>
+</body>
+</html>

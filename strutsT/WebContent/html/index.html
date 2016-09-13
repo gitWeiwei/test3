@@ -1,0 +1,347 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+    <title>主页</title>
+    <meta charset="utf-8" />
+    <!-- 引入css样式表 -->
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/system_protect.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="js/system_protect.js"></script>
+</head>
+<body>
+    <div class="shade"></div>
+    <div id="container">
+        <div id="header">
+            <div class="logo">
+                <a href="shouye.html " onclick="btn1()" target="list-content"> <img src="img/logo1.png" /></a>
+            </div>
+            <!--头部-->
+            <ul class="rt">
+                <li class="index">
+                    <img class="head-icon" src="img/index.png" />
+                    <a href="shouye.html" onclick="btn1()" target="list-content">首页</a>
+                </li>
+                <li class="check" id="check">
+                    <img class="head-icon" src="img/check.png" />
+                    <a href="jiance.html" onclick="btn1()" target="list-content">检测</a>
+                    <img class="sel" src="img/sel-down.png" />
+                </li>
+                <li class="guide" id="guide">
+                    <div class="switchbox">
+                        <img class="head-icon" src="img/xiangdao.png" />
+                        <a href="shouye.html" onclick="detection()" target="list-content">检测向导</a>
+                        <img class="sel" src="img/sel-down.png" />
+                    </div>
+                </li>
+                <li class="rep" id="rep">
+                    <img class="head-icon" src="img/report.png" />
+                    <a href="info_report.html" onclick="btn2()" target="list-content">统计报告</a>
+                </li>
+                <li class="pro" id="pro">
+                    <img class="head-icon" src="img/protect.png" />
+                    <a href="organize.html" onclick="btn3()" target="list-content">系统维护</a>
+                    <img class="sel" src="img/sel-down.png" />
+                </li>
+                <li class="print" id="print">
+                    <img class="head-icon" src="img/print.png" />
+                    <a href="print.html" onclick="btn4()" target="list-content">打印</a>
+                    <img class="sel" src="img/sel-down.png" />
+                </li>
+            </ul>
+            <div class="lock">
+                <a href="#">修改密码</a>
+                <img src="img/lock.png" />
+            </div>
+        </div>
+        <!--开关-->
+        <div class="switch">
+            <div class="on bj">开</div>
+            <div class="off">关</div>
+        </div>
+        <!--检测的二级-->
+        <ul id="service_items">
+            <li class="li1">
+                <a href="basic_check.html" target="list-content" onclick="btn5();">
+                    <img src="img/sel_check.png" />
+                    <span>基本检测</span>
+                </a>
+            </li>
+            <li>
+                <a href="baseCheck.html" target="list-content" onclick="btn5();">
+                    <img src="img/sel_check.png" />
+                    <span>标准检测</span>
+                </a>
+            </li>
+            <li>
+                <a href="jianceyi2-3.html" target="list-content" onclick="btn5();">
+                    <img src="img/sel_check.png" />
+                    <span>快速检测</span>
+                </a>
+            </li>
+            <li>
+                <a href="jianceyi2-3.html" target="list-content" onclick="btn5();">
+                    <img src="img/sel_check.png" />
+                    <span>完全检测</span>
+                </a>
+            </li>
+            <li>
+                <a href="ratioCheck.html" target="list-content" onclick="btn5();">
+                    <img src="img/sel_check.png" />
+                    <span>比例检测</span>
+                </a>
+            </li>
+            <li>
+                <a href="jianceyi2-3.html" target="list-content" onclick="btn5();">
+                    <img src="img/check2.png" />
+                    <span>自有检测</span>
+                </a>
+            </li>
+        </ul>
+        <!--系统维护-->
+        <ul id="system">
+            <li class="li2">
+                <a href="organize.html" target="list-content" onclick="btn5();">
+                    <img src="img/tissue.png" />
+                    <span>组织结构</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="help_work"  onclick="btn5();">
+                    <img src="img/wordbook.png" />
+                    <span>辅助字典</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="abortbtn" onclick="btn5();">
+                    <img src="img/abort.png" />
+                    <span>&nbsp;&nbsp;关于&nbsp;&nbsp;</span>
+                </a>
+            </li>
+        </ul>
+        <!--打印的二级检测-->
+        <ul id="service_items2">
+            <li class="li2 ">
+                <a href="mingxi-rep2-3.html" target="list-content" onclick="btn5();">
+                    <img src="img/print01.png" />
+                    <span>LTO磁带检测报告</span>
+                </a>
+            </li>
+            <li>
+                <a href="text-rep2-3.html" target="list-content" onclick="btn5();">
+                    <img src="img/print02.png" />
+                    <span>基准检测报告</span>
+                </a>
+            </li>
+            <li>
+                <a href="jeizhi-rep2-3.html" target="list-content" onclick="btn5();">
+                    <img src="img/print03.png" />
+                    <span>LTO磁带参数明细表</span>
+                </a>
+            </li>
+            <li>
+                <a href="jeizhi-rep2-3.html" target="list-content" onclick="btn5();">
+                    <img src="img/print04.png" />
+                    <span>LTO磁带检测列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="jeizhi-rep2-3.html" target="list-content" onclick="btn5();">
+                    <img src="img/print05.png" />
+                    <span>LTO磁带检测报告明细表</span>
+                </a>
+            </li>
+            <li>
+                <a href="jeizhi-rep2-3.html" target="list-content" onclick="btn5();">
+                    <img src="img/print06.png" />
+                    <span>单盘磁带历次检测明细表</span>
+                </a>
+            </li>
+            <li>
+                <a href="jeizhi-rep2-3.html" target="list-content" onclick="btn5();">
+                    <img src="img/print07.png" />
+                    <span>基准检测明细表</span>
+                </a>
+            </li>
+        </ul>
+        <!--检测向导-->
+        <div class="detection-box">
+            <div class="dete-head">
+                <span>检测向导</span>
+                <img src="img/close.png" />
+            </div>
+            <div class="detection-con">
+                <p>请选择磁带检测类型：</p>
+                <ul>
+                    <li>
+                        <div class="check">
+                            <a herf="#">
+                                <img src="img/jiance2.png" />
+                            </a>
+                            <span>基本检测</span>
+                        </div>
+                        <div class="basecheck">
+                            <img src="img/guide.png" />
+                            <span>CM芯片记录的内容检测。</span>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="check">
+                            <a href="baseCheck.html" target="list-content">
+                                <img src="img/jiance2.png" />
+                            </a>
+                            <span>标准检测</span>
+                        </div>
+                        <div class="normcheck">
+                            <img src="img/guide.png" />
+                            <p>磁带开头、磁带结尾、磁带两侧边缘磁道检测。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check">
+                            <a herf="#">
+                                <img src="img/jiance2.png" />
+                            </a>
+                            <span>快速检测</span>
+                        </div>
+                        <div class="basecheck">
+                            <img src="img/guide.png" />
+                            <span>单簇磁道检测。</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check">
+                            <a herf="#">
+                                <img src="img/jiance2.png" />
+                            </a>
+                            <span>比例检测</span>
+                        </div>
+                        <div class="normcheck">
+                            <img src="img/guide.png" />
+                            <p>按照磁道数据的容量的一定比例进行检测。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check">
+                            <a herf="#">
+                                <img src="img/jiance2.png" />
+                            </a>
+                            <span>完美检测</span>
+                        </div>
+                        <div class="wholecheck">
+                            <img src="img/guide.png" />
+                            <p>驱动器读取CM数据并读取磁带介质记录的内部数九并读取后，再读CM内容，与读之前CM内容进行比对。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--主体内容-->
+        <div id="main">
+            <div id="zhezhao"></div>
+            <div id="aside">
+                <div id="lf-btn">
+                    <a href="#" id="view">
+                        <img src="img/view.png" />
+                    </a>
+                </div>
+                <ul id="lf-box">
+                    <li><a href="jiance.html" onclick="btn1()" target="list-content">检测</a></li>
+                    <li><a href="jiance2-3.html" target="list-content" onclick="btn5();">磁带检测</a></li>
+                    <li><a href="jianceyi2-3.html" target="list-content" onclick="btn5();">驱动器检测</a></li>
+                    <li><a href="report2-3.html" target="list-content" onclick="btn5();">统计报告</a></li>
+                    <li><a href="protect2-3.html" target="list-content" onclick="btn1();">系统维护</a></li>
+                    <li><a href="jeizhi-rep2-3.html" target="list-content" onclick="btn5();">待检测介质明细表</a></li>
+                    <li><a href="mingxi-rep2-3.html" target="list-content" onclick="btn5();">检测明细报告</a></li>
+                    <li><a href="text-rep2-3.html" target="list-content" onclick="btn5();">检测文字报告</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <div id="indexList">
+                    <iframe id="iframe" name="list-content" frameBorder=0 scrolling=no src="shouye.html"> </iframe>
+                </div>
+
+            </div>
+        </div>
+        <!--关于-->
+        <div class="abort_sth">
+            <div class="abort_head">
+                <span>关于</span>
+                <img src="img/abort01.png" />
+                <img src="img/close.png" />
+            </div>
+            <div class="abort_content">
+                <p class="copyright">
+                    版权所有：<spna>国际档案局档案科学技术研究所</spna>
+                    <span>新锐英诚(北京)科技股份有限公司</span>
+                    版本:<span>2016</span><span>V2.0</span>
+                </p>
+                <p class="line1"></p>
+                <p class="phone">
+                    服务热线：<span>010-57318300</span>
+                </p>
+                <div class="line2"></div>
+                <p class="sn_num">
+                    产品SN号：<span></span>
+                </p>
+            </div>
+        </div>
+        <!--辅助字典-->
+        <div class="workbook">
+            <div class="workbook_head">
+                <span>单位库房维护</span>
+                <img src="img/close.png" />
+            </div>
+            <div class="workbook_content">
+                <div class="st_tree">
+                    <ul class="housebox">
+                        <li class="parent"><a href="#" ref="unit">磁带生成单位</a></li>
+                        <ul show="true">
+                            <li><a href="#" ref="kw">科委</a></li>
+                            <li><a href="#" ref="nw">农委</a></li>
+                            <li><a href="#" ref="jw">纪委</a></li>
+                        </ul>
+                        <li class="parent"><a href="#" class="house">库房</a></li>
+                        <ul>
+                            <li><a href="#" ref="num1">一柜</a></li>
+                            <ul>
+                                <li><a href="#" ref="num1_1">一排</a></li>
+                                <li><a href="#" ref="num1_2">二排</a></li>
+                                <li><a href="#" ref="num1_3">三排</a></li>
+                            </ul>
+                            <li><a href="#" ref="num2">二柜</a></li>
+                            <ul>
+                                <li><a href="#" ref="num2_1">一排</a></li>
+                                <li><a href="#" ref="num2_2">二排</a></li>
+                                <li><a href="#" ref="num2_3">三排</a></li>
+                            </ul>
+                            <li><a href="#" ref="num3">三柜</a></li>
+                            <ul>
+                                <li><a href="#" ref="num3_1">一排</a></li>
+                                <li><a href="#" ref="num3_2">二排</a></li>
+                                <li><a href="#" ref="num3_3">三排</a></li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="st_edit">
+                    <span>编码：</span><input type="text" /><br />
+                    <span>名称：</span><input type="text" />
+                </div>
+                <div class="editbtn">
+                    <button class="add">新增</button>
+                    <button class="save">保存</button>
+                    <button class="save">删除</button>
+                </div>
+            </div>
+
+        </div>
+       
+    </div>
+    
+    <script type="text/javascript" src="js/SimpleTree.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
