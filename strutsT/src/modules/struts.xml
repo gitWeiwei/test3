@@ -1,4 +1,0 @@
-<action name="login" class="com.csdn.net.test.LoginAction" >
-<result name="success">/jsp/homepage.jsp</result>
-<result name="fail">/jsp/showLogin.jsp</result>
-</action>
